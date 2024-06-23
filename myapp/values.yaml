@@ -26,9 +26,11 @@ fullnameOverride: ""
  
  
 service:
-  type: ClusterIP
-  port: 80
- 
+  type: NodePort
+  port: 3000
+  targetPort: 3000
+  protocol: TCP
+  
 ingress:
   enabled: false
   annotations: {}
