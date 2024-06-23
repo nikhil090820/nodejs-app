@@ -1,0 +1,8 @@
+project: default
+source:
+  repoURL: 'https://github.com/nikhil090820/nodejs-app'
+  path: myapp
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: default
